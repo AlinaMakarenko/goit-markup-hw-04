@@ -496,6 +496,53 @@ border-top-right-radius: 50%;
 .social-icons-link:focus{
   background-color: var(--main-color);
 }
+.clients{
+display: flex;
+padding-top: 100px;
+padding-bottom: 94px;
+  }
+  .container-clients{
+    margin-left: auto;
+  margin-right: auto;
+   width: 1200px;
+  padding: 0 15px;
+  }
+  .icon-clients{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+  .clients-list:last-child{
+    margin-right: 0px;
+  }
+  
+   
+  
+  .clients-list{
+    display: flex;
+    border-radius: 4px;
+    fill: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    justify-content: center;
+    margin-right: 30px;
+    
+  }
+  .clients-icons-link{
+    width: 170px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-color);
+  }
+  .clients-list:hover,
+  .clients-list:focus{
+    border-color: var(--main-color);
+  }
+  .client-icon:hover,
+ .client-icon:focus{
+    fill: var(--main-color);
+  }
 .button-list {
   font-family: 'Roboto',sans-serif ;
   color: var(--corporation-color);
@@ -598,6 +645,7 @@ text-align: left;
 
 
 .footer {
+  display: flex;
   background-color: var(--head-footer-background);
   padding-top: 66px;
   padding-bottom: 64px;
@@ -607,7 +655,7 @@ text-align: left;
 
 .footer-logo{
   display: block;
-  
+ 
 margin: 0px 0px 28px 0px;
 }
 .footer-logo:hover,
@@ -655,7 +703,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  display: block;
+  display:list-item;
   margin: 0px;
   margin-top: 15px;
 }
@@ -670,4 +718,38 @@ address {
 .address-link:focus {
   color: var(--main-color);
   background-color: transparent;
+}
+.footer-icon{
+  display: block;
+}
+.join{
+  color: var(--main-light);
+text-transform: uppercase;
+margin-bottom: 20px;
+margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.footer-list{
+display: flex;
+    align-items: baseline;
+}
+.icon-footer{
+margin-right: 10px;
+}
+.footer-icons-link{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-light);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--icon-bg);
+}
+.footer-icon{
+  fill: currentColor;
 }
