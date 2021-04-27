@@ -649,14 +649,20 @@ text-align: left;
   background-color: var(--head-footer-background);
   padding-top: 66px;
   padding-bottom: 64px;
+  align-items: baseline;
 }
-
+.container-footer{
+  margin-left: auto;
+  margin-right: auto;
+   width: 1200px;
+  padding: 0 15px;
+  display: flex;
+}
   
 
 .footer-logo{
-  display: block;
- 
-margin: 0px 0px 28px 0px;
+  display: inline-block;
+margin-bottom: 20px;
 }
 .footer-logo:hover,
 .footer-logo:focus {
@@ -680,6 +686,7 @@ address {
   display: block;
   margin: 0px;
   padding-bottom: 0px;
+ 
 }
 .address-city {
   color: var(--main-light);
@@ -708,7 +715,7 @@ address {
   margin-top: 15px;
 }
 .link-address{
-  display: block;
+  display: inline-block;
   margin: 0px;
   text-align: left;
   padding-left: 0px;
@@ -721,6 +728,7 @@ address {
 }
 .footer-icon{
   display: block;
+  fill: currentColor;
 }
 .join{
   color: var(--main-light);
@@ -732,10 +740,13 @@ margin-top: 0px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    display: inline-block;
 }
 .footer-list{
 display: flex;
     align-items: baseline;
+    margin: 0px;
+    padding: 0px;
 }
 .icon-footer{
 margin-right: 10px;
@@ -750,6 +761,6 @@ display: flex;
     border-radius: 50%;
     background-color: var(--icon-bg);
 }
-.footer-icon{
-  fill: currentColor;
+.footer-icons{
+  margin-left: 70px;
 }
