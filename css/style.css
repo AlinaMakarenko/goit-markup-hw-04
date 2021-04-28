@@ -193,6 +193,8 @@ display: flex;
 }
 
 
+
+
 .head-container{
   display: block;
    width: 1200px;
@@ -546,17 +548,20 @@ padding-bottom: 94px;
 .button-list {
   font-family: 'Roboto',sans-serif ;
   color: var(--corporation-color);
-  background-color: var(--main-light);
+  background-color: var(--team-background);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
   
 }
 .button-list:hover,
 .button-list:focus {
-  color: var(--main-color);
-  background-color:transparent;
+  color: var(--main-light);
+  background-color: var(--main-color);
 }
 
 .projects {
@@ -621,6 +626,7 @@ margin-top: 30px;
 .images-card-last{
   margin: 0px;
 }
+
 .projects{
   margin: 0px;
 }
