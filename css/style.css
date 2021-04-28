@@ -12,7 +12,7 @@
   --shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   --shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --line-footer: #ececec;
-  --card-border: #eeeeee;
+  --card-border: rgb(238, 238, 238);
   --icon-bg: rgba(255, 255, 255, 0.1);
   --icon-color: rgb(175, 177, 184);
 }
@@ -606,6 +606,19 @@ padding-bottom: 94px;
   padding: 0px;
   
 }
+
+
+.card-links:hover,
+.card-links:focus{
+  display: flex;
+  box-shadow: var(--card-border);
+}
+.card-links{
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .card-projects-list-first{
   display: inline-flex;
 text-align: center;
