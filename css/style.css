@@ -226,9 +226,30 @@ display: flex;
 }
 
 .cars-projects{
-  display:inline-block;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-li));
+  margin-top: calc(-1 * var(--margin-left-li));
+  justify-content: space-between;
+  padding: 0px;
 }
-
+.cars-projects .li{
+  flex-basis: calc(100% / 3 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+  margin-top: var(--margin-left-li);
+}
+.item{
+  margin-left: 30px;
+}
+.item1{
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.item2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .button{
   font-family: 'Roboto', sans-serif;
@@ -599,19 +620,14 @@ padding-bottom: 94px;
   letter-spacing: 0.03em;
 }
 
-.cars-projects{
-  display: inline-block;
-  width: fit-content;
-  margin: 0px;
-  padding: 0px;
-  
-}
+
 
 
 .card-links:hover,
 .card-links:focus{
   display: flex;
-  box-shadow: var(--card-border);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .card-links{
   text-decoration: none;
@@ -619,10 +635,6 @@ padding-bottom: 94px;
 }
 
 
-.card-projects-list-first{
-  display: inline-flex;
-text-align: center;
-}
 .card-projects-list{
 display: inline-flex;
 text-align: center;
@@ -633,8 +645,7 @@ margin-top: 30px;
 }
 
 .images-card{
-  margin-right: 30px;
-  justify-content: space-between;
+justify-content: space-between;
 }
 .images-card-last{
   margin: 0px;
@@ -651,7 +662,6 @@ margin-top: 30px;
 }
 .projects-list-title{
 border: 1px solid var(--border-header);
-margin-right: 30px;
 padding: 20px 24px;
 text-align: left;
 }
