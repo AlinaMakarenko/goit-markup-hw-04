@@ -38,7 +38,7 @@ padding: 0 15px;
  display: flex;
   justify-content: space-between;
   align-items: center;
-border-bottom: 1px solid var(--border-header);
+
   
 
 }
@@ -113,7 +113,7 @@ img {
 }
 .header {
   background-color: var(--main-light);
-  
+  border-bottom: 1px solid var(--border-header);
 }
 
 .logo-blue {
@@ -286,7 +286,7 @@ align-items: center;
 .button:hover,
 .button:focus {
   color: var(--main-color);
-  background-color: transparent;
+  background-color: var(--team-background);
 }
 .scroll{
   display:block;
@@ -325,10 +325,10 @@ border-top-right-radius: 4px;
 display: block;
 color: var(--scroll-text);
 margin-bottom: 30px;
-padding-bottom: 25px;
-padding-left: 100px;
-padding-right: 100px;
-padding-top: 25px;
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
   }
    
 
@@ -558,14 +558,17 @@ padding-bottom: 94px;
     justify-content: center;
     fill: var(--icon-color);
   }
+  
   .clients-list:hover,
   .clients-list:focus{
     border-color: var(--main-color);
   }
-  .client-icon:hover,
- .client-icon:focus{
+  .clients-icons-link:hover .client-icon,
+  .clients-icons-link:focus .client-icon{
+    border-color: var(--main-color);
     fill: var(--main-color);
   }
+  
 .button-list {
   font-family: 'Roboto',sans-serif ;
   color: var(--corporation-color);
